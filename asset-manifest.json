@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/niver-kali/static/css/main.4f463f47.css",
+    "main.js": "/niver-kali/static/js/main.d43a6ad6.js",
+    "static/js/453.0a36081d.chunk.js": "/niver-kali/static/js/453.0a36081d.chunk.js",
+    "static/media/cake.png": "/niver-kali/static/media/cake.7614009a59fa25074461.png",
+    "static/media/akali.png": "/niver-kali/static/media/akali.c80057e00c31defb40dd.png",
+    "index.html": "/niver-kali/index.html",
+    "main.4f463f47.css.map": "/niver-kali/static/css/main.4f463f47.css.map",
+    "main.d43a6ad6.js.map": "/niver-kali/static/js/main.d43a6ad6.js.map",
+    "453.0a36081d.chunk.js.map": "/niver-kali/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f463f47.css",
+    "static/js/main.d43a6ad6.js"
+  ]
+}
