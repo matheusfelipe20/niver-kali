@@ -11,6 +11,7 @@
   position: relative;
 }
 
+/* Cartão */
 .card {
   display: flex;
   flex-direction: row;
@@ -50,6 +51,12 @@
   width: 120px;
   height: auto;
   margin-bottom: 10px;
+}
+
+.left-decor {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .card-left h2 {
@@ -108,6 +115,7 @@
   50% { transform: scale(1.05); }
 }
 
+/* Fireworks */
 .firework {
   position: absolute;
   width: 6px;
@@ -135,5 +143,50 @@
   100% {
     transform: scale(2.5);
     opacity: 0;
+  }
+}
+
+/* Confetti */
+.confetti {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: fall 5s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .card.open {
+    width: 90%;
+    height: 350px;
+  }
+
+  .card-left img,
+  .left-decor {
+    width: 100px;
+  }
+
+  .message h2 {
+    font-size: 1.2rem;
+  }
+
+  .message p {
+    font-size: 1rem;
   }
 }
