@@ -1,0 +1,139 @@
+.App {
+  background-color: #fff0f7;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comic Sans MS', cursive;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 250px;
+  height: 300px;
+  background-color: #ff90d2;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: width 0.6s ease;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.card.open {
+  width: 600px;
+}
+
+.card-left {
+  width: 100%;
+  background-color: #ff90d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-left.open-left{
+  width: 50%;
+}
+
+.card-left img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card-left h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+}
+
+.card-leftname {
+  margin-top: 0px;
+}
+
+.card-right {
+  width: 50%;
+  background-color: #ffe1f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.message {
+  text-align: left;
+  color: #444;
+}
+
+.message h2 {
+  margin-top: 0;
+  color: #c2185b;
+}
+
+.message h6 {
+  margin-top: 0;
+  color: #c2185b;
+}
+
+.click-text {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #c71585;
+  animation: pulse 2s infinite;
+  z-index: 3;
+  position: relative;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.firework {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  box-shadow:
+    0 0 #ff5f5f,
+    15px 0 #ffcf5f,
+    -15px 0 #5fff95,
+    0 15px #5f9fff,
+    0 -15px #cf5fff,
+    10px 10px #ff5fca,
+    -10px 10px #ffd45f,
+    10px -10px #85ff5f,
+    -10px -10px #5fd9ff;
+  animation: explode 1.5s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
