@@ -20,8 +20,7 @@ function App() {
         audioRef.current.volume = 0.3;
         audioRef.current.play();
       }
-  
-      // Criar fogos fixos
+
       const particles = Array.from({ length: 6 }).map((_, i) => ({
         id: i,
         left: Math.random() * 100,
@@ -30,7 +29,6 @@ function App() {
       }));
       setFireworks(particles);
   
-      // Confetes fofos
       const confettiArray = Array.from({ length: 20 }).map((_, i) => ({
         id: i,
         left: `${Math.random() * 100}%`,

@@ -11,7 +11,6 @@
   position: relative;
 }
 
-/* Cartão */
 .card {
   display: flex;
   flex-direction: row;
@@ -115,7 +114,6 @@
   50% { transform: scale(1.05); }
 }
 
-/* Fireworks */
 .firework {
   position: absolute;
   width: 6px;
@@ -146,7 +144,6 @@
   }
 }
 
-/* Confetti */
 .confetti {
   position: absolute;
   top: -10px;
@@ -170,7 +167,7 @@
   }
 }
 
-/* Responsividade */
+/* Mobile */
 @media (max-width: 700px) {
   .card.open {
     width: 90%;
